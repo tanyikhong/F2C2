@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <center>        
+            <canvas id="cv" width="300" height="159" style="border: 1px solid red;"></canvas>
+            <canvas id="cv1" width="300" height="159" style="border: 1px solid red;"></canvas>
+        </center>
+
+
+        <script>
+            const c = document.getElementById("cv1");
+            const ctc = c.getContext("2d");
+
+
+            ctc.beginPath();
+            ctc.arc(150,75,25,0,2* Math.PI);
+
+            ctc.strokeStyle = "red";
+            ctc.stroke();
+
+
+
+
+        </script>
+
+<script>
+    const d = document.getElementById("cv");
+    const dtc = d.getContext("2d");
+
+
+    dtc.beginPath();
+    dtc.moveTo(20,20);
+    dtc.lineTo(20,100);
+    dtc.lineTo(100,20);
+    dtc.lineTo(20,20);
+
+    dtc.fillStyle = "blue";
+    dtc.fill();
+
+
+
+
+</script>
+
+    </body>
+</html>
